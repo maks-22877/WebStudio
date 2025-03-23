@@ -1,26 +1,36 @@
-body {
-    font-family: 'Poppins', 'Open Sans','Montserrat', sans-serif;
+:root {
+    --primary-color: #2b2b2b; 
+    --accent-color: #007bff; 
+    --text-color: #212121; 
+    --secondary-text-color: #757575; 
+    --background-color: #ffffff; 
+    --light-gray: #f5f5f5; 
+  }
+  
+  body {
+    font-family: 'Poppins', 'Open Sans', 'Montserrat', sans-serif;
     font-weight: 400;
-}
-
-h1,
-h2,
-h3 {
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+  
+  h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-}
-
-p,
-a,
-li {
+    color: var(--primary-color);
+  }
+  
+  p, a, li {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-}
-
-.bold {
+    color: var(--secondary-text-color);
+  }
+  
+  .bold {
     font-weight: 600;
-}
-
-.light {
+  }
+  
+  .light {
     font-weight: 300;
-}
+  }
+  
