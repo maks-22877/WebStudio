@@ -1,36 +1,79 @@
 :root {
-    --primary-color: #2b2b2b; 
-    --accent-color: #007bff; 
-    --text-color: hsl(0, 0%, 13%); 
-    --secondary-text-color: #757575; 
-    --background-color: #ffffff; 
-    --light-gray: #f5f5f5; 
-  }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    color: var(--text-color);
-    background-color: var(--background-color);
-  }
-  
-  h1, h2, h3 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: var(--primary-color);
-  }
-  
-  p, a, li {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    color: var(--secondary-text-color);
-  }
-  
-  .bold {
-    font-weight: 600;
-  }
-  
-  .light {
-    font-weight: 300;
-  }
-  
+  --text-color: #212121;
+  --title-color: #fff;
+  --subtext-color: #757575;
+  --bg-color: #2F303A;
+  --subtitle-color: #2196F3;
+  --text2-color: #000;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--text-color);
+}
+
+.header-title, .header-span, .footer-title, .footer-span {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+}
+.header-title { color: var(--text2-color); }
+.header-span, .header-link2, .header-mail { color: var(--subtitle-color); }
+.header-link, .header-tel { color: var(--text-color); }
+.effective-title {
+  color: var(--title-color);
+  text-align: center;
+  font-size: 44px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.effective-button, .button-btn {
+  background: var(--subtitle-color);
+  color: var(--title-color);
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 4px;
+  width: 216px;
+  height: 50px;
+}
+
+.warning-title, .warning-text {
+  font-size: 14px;
+  letter-spacing: 0.42px;
+}
+.warning-title { font-weight: 700; text-transform: uppercase; }
+.warning-text { color: var(--subtext-color); font-weight: 400; }
+
+.engaged-title, .team-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+.team-subtitle, .team-text {
+  text-align: center;
+  font-size: 16px;
+}
+.team-text { color: var(--subtext-color); font-weight: 400; }
+
+.footer {
+  background: var(--bg-color);
+  width: 100%;
+  padding: 20px;
+}
+.foooter-address, .footer-mail, .footer-tel {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.button-buttton {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.list-photo, .engaged-photo, .team-photo {
+  width: 370px;
+  height: 294px;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
