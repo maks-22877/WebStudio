@@ -1,10 +1,24 @@
 :root {
   --text-color: #212121;
-  --title-color: #FFFFFF;
+  --title-color: #ffffff;
   --subtext-color: #757575;
-  --bg-color: #2F303A;
-  --subtitle-color: #2196F3;
+  --bg-color: #2f303a;
+  --subtitle-color: #2196f3;
   --text2-color: #000;
+}
+
+.container {
+  width: 1170px;
+  outline: solid red;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .header-title {
@@ -67,6 +81,11 @@
   letter-spacing: 0.28px;
 }
 
+.effective {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .effective-title {
   color: var(--title-color);
   text-align: center;
@@ -105,6 +124,10 @@
   flex-shrink: 0;
 }
 
+.waring {
+  padding-top: 94px;
+}
+
 .warning-title {
   color: var(--text-color);
   font-family: Roboto;
@@ -130,6 +153,11 @@
   flex-shrink: 0;
 }
 
+.engaged {
+  padding-top: 108px;
+  padding-bottom: 94px;
+}
+
 .engaged-title {
   color: var(--text-color);
   text-align: center;
@@ -146,6 +174,11 @@
   height: 294px;
   flex-shrink: 0;
   background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-title {
@@ -193,6 +226,8 @@
   width: 1600px;
   height: 252px;
   flex-shrink: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-title {
@@ -229,7 +264,7 @@
 }
 
 .footer-mail {
-  color: rgba(255, 255, 255, 0.60);
+  color: rgba(255, 255, 255, 0.6);
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -242,7 +277,7 @@
 }
 
 .footer-tel {
-  color: rgba(255, 255, 255, 0.60);
+  color: rgba(255, 255, 255, 0.6);
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -254,12 +289,17 @@
   flex-shrink: 0;
 }
 
+.button {
+  padding-top: 94px;
+}
+
 .button-btn {
   border-radius: 4px;
   background: var(--subtitle-color);
 
 
-  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
   width: 73px;
   height: 38px;
   flex-shrink: 0;
@@ -270,7 +310,6 @@
   font-style: normal;
   font-weight: 500;
   line-height: 26px;
-  /* 162.5% */
   letter-spacing: 0.48px;
 }
 
@@ -283,6 +322,11 @@
   font-weight: 500;
   line-height: 26px;
   letter-spacing: 0.48px;
+}
+
+.list {
+  padding-top: 50px;
+  padding-bottom: 94px;
 }
 
 .list-photo {
