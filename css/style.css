@@ -41,7 +41,7 @@
   letter-spacing: 0.78px;
 }
 
-.header-link2 {
+.header-link:hover {
   color: var(--subtitle-color);
   font-family: Roboto;
   font-size: 14px;
@@ -81,12 +81,12 @@
   letter-spacing: 0.28px;
 }
 
-.effective {
+.decision {
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
-.effective-title {
+.decision-title {
   color: var(--title-color);
   text-align: center;
   font-family: Roboto;
@@ -100,7 +100,7 @@
   flex-shrink: 0;
 }
 
-.effective-button {
+.decision-button {
   color: var(--title-color);
   text-align: center;
   font-family: Roboto;
@@ -117,18 +117,18 @@
   flex-shrink: 0;
 }
 
-.effective {
+.decision {
   background: var(--bg-color);
   width: 1600px;
   height: 600px;
   flex-shrink: 0;
 }
 
-.waring {
+.Details {
   padding-top: 94px;
 }
 
-.warning-title {
+.Details-title {
   color: var(--text-color);
   font-family: Roboto;
   font-size: 14px;
@@ -140,7 +140,7 @@
   width: 270px;
 }
 
-.warning-text {
+.Details-text {
   color: var(--subtext-color);
   font-family: Roboto;
   font-size: 14px;
@@ -153,12 +153,12 @@
   flex-shrink: 0;
 }
 
-.engaged {
-  padding-top: 108px;
+.doing {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.engaged-title {
+.doing-title {
   color: var(--text-color);
   text-align: center;
   font-family: Roboto;
@@ -169,7 +169,7 @@
   letter-spacing: 1.08px;
 }
 
-.engaged-photo {
+.doing-photo {
   width: 370px;
   height: 294px;
   flex-shrink: 0;
