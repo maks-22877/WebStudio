@@ -123,12 +123,12 @@
 
 }
 
-.Details {
+.details {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.Details-title {
+.details-title {
   color: var(--text-color);
   font-family: Roboto;
   font-size: 14px;
@@ -140,7 +140,7 @@
   width: 270px;
 }
 
-.Details-text {
+.details-text {
   color: var(--subtext-color);
   font-family: Roboto;
   font-size: 14px;
@@ -224,7 +224,6 @@
 
 .footer {
   background: var(--bg-color);
-
   padding-top: 60px;
   padding-bottom: 60px;
 }
