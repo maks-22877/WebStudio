@@ -8,10 +8,11 @@
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   outline: solid red;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -119,13 +120,12 @@
 
 .decision {
   background: var(--bg-color);
-  width: 1600px;
-  height: 600px;
-  flex-shrink: 0;
+
 }
 
 .Details {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .Details-title {
@@ -179,6 +179,7 @@
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
+  padding-bottom: 124px;
 }
 
 .team-title {
@@ -223,9 +224,7 @@
 
 .footer {
   background: var(--bg-color);
-  width: 1600px;
-  height: 252px;
-  flex-shrink: 0;
+
   padding-top: 60px;
   padding-bottom: 60px;
 }
