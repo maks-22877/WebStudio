@@ -211,8 +211,7 @@
 }
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 94px;  
   padding-bottom: 124px;
 }
 
@@ -256,6 +255,7 @@
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.48px;
+  margin-bottom: 30px;
 }
 
 .footer {
@@ -300,6 +300,7 @@
   width: 231px;
   height: 21px;
   flex-shrink: 0;
+  
 }
 
 .footer-mail {
@@ -392,6 +393,7 @@
   line-height: 36px;
   letter-spacing: 1.08px;
   width: 322px;
+  margin-bottom: 4px;
 }
 
 .list-subtitle {
@@ -400,7 +402,14 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 30px; 
   letter-spacing: 0.48px;
   width: 322px;
+  margin-bottom: 20px;
+}
+
+.list-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
