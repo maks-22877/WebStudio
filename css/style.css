@@ -23,6 +23,7 @@
 }
 
 .header-container {
+  outline: solid red;
   display: flex;
   align-items: center;
 }
