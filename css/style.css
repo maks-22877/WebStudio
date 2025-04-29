@@ -239,6 +239,8 @@
 }
 
 .team-photo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   width: 270px;
   height: 260px;
   flex-shrink: 0;
