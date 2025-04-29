@@ -21,9 +21,12 @@
   padding-top: 25px;
   padding-bottom: 25px;
 }
+
 .header-container {
   display: flex;
+  align-items: center;
 }
+
 .header-list {
   display: flex;
   gap: 50px;
@@ -80,9 +83,7 @@
   color: var(--subtitle-color);
   font-family: Roboto;
   display: flex;
-  margin-left: 340px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-left: auto;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -137,9 +138,13 @@
   border-radius: 4px;
   background: var(--subtitle-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  width: 216px;
   display: flex;
   margin: 0 auto;
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .decision {
@@ -151,6 +156,7 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .details-list {
   display: flex;
   gap: 30px;
@@ -186,6 +192,7 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .doing-list {
   display: flex;
   gap: 30px;
@@ -211,8 +218,13 @@
 }
 
 .team {
-  padding-top: 94px;  
+  padding-top: 94px;
   padding-bottom: 124px;
+}
+.team-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
 }
 
 .team-title {
@@ -242,8 +254,8 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-bottom: 10px;
   letter-spacing: 0.48px;
+  margin-bottom: 10px;
 }
 
 .team-text {
@@ -300,7 +312,7 @@
   width: 231px;
   height: 21px;
   flex-shrink: 0;
-  
+
 }
 
 .footer-mail {
@@ -339,7 +351,7 @@
   border-radius: 4px;
   background: var(--subtitle-color);
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1),
-  0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
   width: 73px;
   height: 38px;
   flex-shrink: 0;
@@ -402,7 +414,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; 
+  line-height: 30px;
   letter-spacing: 0.48px;
   width: 322px;
   margin-bottom: 20px;
