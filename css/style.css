@@ -350,19 +350,35 @@
   padding-top: 94px;
 }
 
-
-
-.button-buttton {
-  color: var(--text-color);
-  text-align: center;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 26px;
-  letter-spacing: 0.48px;
+.button-list:nth-child(1) {
+  flex-basis: 73px;
+  height: 38px;
+  flex-shrink: 0;
 }
 
+.button-list:nth-child(2) {
+  flex-basis: 125px;
+  height: 38px;
+  flex-shrink: 0;
+}
+
+.button-list:nth-child(3) {
+  flex-basis: 112px;
+  height: 38px;
+  flex-shrink: 0;
+}
+
+.button-list:nth-child(4) {
+  flex-basis: 103px;
+  height: 38px;
+  flex-shrink: 0;
+}
+
+.button-list:nth-child(5) {
+  flex-basis: 130px;
+  height: 38px;
+  flex-shrink: 0;
+}
 .button-buttton:hover {
   color: var(--title-color);
   background-color: var(--subtitle-color);
@@ -373,10 +389,19 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px; 
   letter-spacing: 0.48px;
 }
-
+.button-buttton {
+  color: var(--text-color);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.48px;
+}
 .button-list {
   display: flex;
   gap: 8px;
