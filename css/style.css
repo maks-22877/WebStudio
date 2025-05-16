@@ -162,7 +162,38 @@
   display: flex;
   gap: 30px;
 }
+.details-antena::before,
+.details-watch::before,
+.details-laptop::before,
+.details-astronaft::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 70px;
+}
 
+.details-antena::before {
+  background-image: url("../images/antena.webp");
+}
+
+.details-watch::before {
+  background-image: url("../images/watch.webp");
+}
+
+.details-laptop::before {
+  background-image: url("../images/laptop.webp");
+}
+
+.details-astronaft::before {
+  background-image: url("../images/astronaft.webp");
+}
 .details-title {
   color: var(--text-color);
   font-family: Roboto;
