@@ -6,6 +6,7 @@
   --subtitle-color: #2196f3;
   --text2-color: #000;
   --bg-color2: #f5f4fa;
+  -bg-color3: #fff;
 }
 
 .container {
@@ -21,6 +22,7 @@
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
+  background: var(--bg-color3);
 }
 
 .header-container {
@@ -108,11 +110,19 @@
 }
 
 .decision {
-  background-image: url("../images/decision.webp");
-  background-size: 1600px 600px;
-  background-repeat: no-repeat;
+  background: var(--bg-color);
+
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/decision.webp");
   padding-top: 200px;
   padding-bottom: 200px;
+  background-repeat: no-repeat;
+  background-size: 1600px 600px;
 }
 
 .decision-title {
@@ -157,6 +167,7 @@
 .details {
   padding-top: 94px;
   padding-bottom: 94px;
+  background: var(--bg-color3);
 }
 
 .details-list {
@@ -225,6 +236,7 @@
 .doing {
   padding-top: 94px;
   padding-bottom: 94px;
+  background: var(--bg-color3);
 }
 
 .doing-list {
@@ -259,6 +271,7 @@
 .team-item {
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    background: var(--bg-color3);
 }
 
 .list-item:hover {
@@ -271,7 +284,9 @@
   gap: 30px;
   margin-top: 50px;
 }
-
+.hr {
+  margin-top: 25px;
+}
 .team-title {
   color: var(--text-color);
   text-align: center;
@@ -281,6 +296,7 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.08px;
+  outline: 1px solid #eee;
 }
 
 .team-photo {
@@ -392,6 +408,7 @@
 
 .button {
   padding-top: 94px;
+  background: var(--bg-color3);
 }
 
 .button-list:nth-child(1) {
@@ -454,6 +471,7 @@
 }
 
 .list {
+  background: var(--bg-color3);
   padding-top: 50px;
   padding-bottom: 94px;
 }
@@ -476,6 +494,7 @@
   letter-spacing: 1.08px;
   width: 322px;
   margin-bottom: 4px;
+  margin-left: 24px;
 }
 
 .list-subtitle {
@@ -488,10 +507,17 @@
   letter-spacing: 0.48px;
   width: 322px;
   margin-bottom: 20px;
+  margin-left: 24px;
 }
 
 .list-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+.list-item {
+  height: 404px;
+  outline: 1px solid #eee;
+  flex-shrink: 0;
+  flex-basis: calc((100% - (30px * 2)) / 3);
 }
