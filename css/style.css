@@ -195,6 +195,7 @@
   background-image: url("../images/astronaft.webp");
 }
 .details-title {
+   padding-top: 30px;
   color: var(--text-color);
   font-family: Roboto;
   font-size: 14px;
