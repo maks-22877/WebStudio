@@ -964,26 +964,54 @@ span {
 }
 
 .backdrop {
-  background-color: rgba(0, 0, 0, 0.20);
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  visibility: visible;
+
+  transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
+}
+
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .modal {
-  position: relative;
+  background-color: #fff;
   padding: 40px;
-  width: 528px;
-  height: 581px;
-  flex-shrink: 0;
   border-radius: 4px;
-  background: rgb(255, 255, 255);
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+  
+  transform: scale(1);
+  opacity: 1;
+  transition:
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden .modal {
+  transform: scale(0.8);
+  opacity: 0;
+}
+
+
+.backdrop.is-hidden .modal {
+  transform: scale(0.8);
+  opacity: 0;
 }
 
 .modal-tittle {
@@ -1140,8 +1168,11 @@ span {
 }
 
 .is-hidden {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
+
 
 /* Кнопки */
 .decision-button,
