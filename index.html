@@ -15,7 +15,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/resest.css" />
   <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -139,7 +139,7 @@
     <section class="team">
       <div class="container">
         <h2 class="team-title">Наша команда</h2>
-        <ul class="team-list">
+        <ul data-aos="fade-down" class="team-list">
           <li class="team-item">
             <img class="team-photo" src="./images/igor.webp" alt="igor" width="100" />
             <h3 class="team-subtitle">Ігор Дем'яненко</h3>
@@ -288,32 +288,32 @@
       <div class="container">
         <h2 class="client-title">Постійні клієнти</h2>
         <ul class="client-list">
-          <li class="client-item">
+          <li data-aos="flip-left" class="client-item">
             <svg class="client-icon">
               <use href="./images/icons.svg#icon-client_1"></use>
             </svg>
           </li>
-          <li class="client-item">
+          <li data-aos="flip-left" class="client-item">
             <svg class="client-icon">
               <use href="./images/icons.svg#icon-client_2"></use>
             </svg>
           </li>
-          <li class="client-item">
+          <li data-aos="flip-left" class="client-item">
             <svg class="client-icon">
               <use href="./images/icons.svg#icon-client_3"></use>
             </svg>
           </li>
-          <li class="client-item">
+          <li data-aos="flip-left" class="client-item">
             <svg class="client-icon">
               <use href="./images/icons.svg#icon-client_4"></use>
             </svg>
           </li>
-          <li class="client-item">
+          <li data-aos="flip-left" class="client-item">
             <svg class="client-icon">
               <use href="./images/icons.svg#icon-client_5"></use>
             </svg>
           </li>
-          <li class="client-item">
+          <li data-aos="flip-left" class="client-item">
             <svg class="client-icon">
               <use href="./images/icons.svg#icon-client_6"></use>
             </svg>
@@ -446,6 +446,10 @@
     </div>
   </div>
   <script src="./modal_window.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
