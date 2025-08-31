@@ -1,0 +1,53 @@
+.decision {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.decision-title {
+  color: var(--title-color);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 60px;
+  /* 136.364% */
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
+  max-width: 696px;
+  display: flex;
+  margin-bottom: 40px;
+  margin: 0 auto;
+}
+
+.decision-button {
+  color: var(--title-color);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  /* 187.5% */
+  letter-spacing: 0.96px;
+  border-radius: 4px;
+  background: var(--subtitle-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.decision {
+  background: var(--bg-color);
+  background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url("../images/decision.webp");
+  background-size: 1600px 600px;
+  background-repeat: no-repeat;
+}
