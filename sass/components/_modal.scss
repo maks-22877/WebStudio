@@ -41,7 +41,7 @@
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &-tittle {
+  &__tittle {
     color: rgb(33, 33, 33);
     text-align: center;
     font-family: Roboto;
@@ -53,7 +53,7 @@
     margin-bottom: 12px;
   }
 
-  &-input {
+  &__input {
     width: 448px;
     height: 40px;
     flex-shrink: 0;
@@ -70,7 +70,7 @@
     }
   }
 
-  &-text {
+  &__text {
     color: rgb(87, 87, 87);
     font-family: Roboto;
     font-size: 12px;
@@ -81,14 +81,14 @@
     margin-bottom: 4px;
   }
 
-  &-svg {
+  &__svg {
     position: absolute;
     width: 18px;
     height: 18px;
     margin: 11px 12px;
   }
 
-  &-box {
+  &__box {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -105,12 +105,12 @@
     }
   }
 
-  &-close {
+  &__close {
     width: 18px;
     height: 18px;
   }
 
-  &-comment {
+  &__comment {
     color: rgb(94, 93, 93);
     font-family: Roboto;
     font-size: 12px;
@@ -125,7 +125,7 @@
     padding: 12px 16px;
   }
 
-  &-button {
+  &__button {
     color: #fff;
     text-align: center;
     font-family: Roboto;
@@ -153,14 +153,14 @@
     background-color: rgb(33, 150, 243);
   }
 
-  &-box {
+  &__box {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
   }
 
-  &-text {
+  &__text {
     color: #757575;
     font-family: Roboto;
     font-size: 14px;
@@ -171,7 +171,7 @@
     margin-left: 8.38px;
   }
 
-  &-a {
+  &__a {
     color: rgb(33, 150, 243);
     font-family: Roboto;
     font-size: 14px;

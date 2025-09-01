@@ -11,7 +11,7 @@
   background-size: 1600px 600px;
   background-repeat: no-repeat;
 
-  &-title {
+  &__title {
     color: var(--title-color);
     text-align: center;
     font-family: Roboto;
@@ -27,7 +27,7 @@
     margin: 0 auto;
   }
 
-  &-button {
+  &__button {
     color: var(--title-color);
     text-align: center;
     font-family: Roboto;

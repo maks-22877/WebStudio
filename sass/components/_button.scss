@@ -2,7 +2,7 @@
   padding-top: 94px;
   background: var(--bg-color3);
 
-  &-list {
+  &__list {
     display: flex;
     gap: 8px;
     justify-content: center;
@@ -39,7 +39,7 @@
     }
   }
 
-  &-buttton {
+  &__buttton {
     color: var(--text-color);
     text-align: center;
     font-family: Roboto;

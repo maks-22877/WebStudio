@@ -2,12 +2,12 @@
   padding-top: 94px;
   background: var(--bg-color3);
 
-  &-list {
+  &__list {
     display: flex;
     gap: 30px;
   }
 
-  &-title {
+  &__title {
     color: var(--text-color);
     font-family: Roboto;
     font-size: 14px;
@@ -20,7 +20,7 @@
     margin: 30px auto 10px;
   }
 
-  &-text {
+  &__text {
     color: var(--subtext-color);
     font-family: Roboto;
     font-size: 14px;
@@ -33,10 +33,10 @@
     flex-shrink: 0;
   }
 
-  &-art1::before,
-  &-art2::before,
-  &-art3::before,
-  &-art4::before {
+  &__art1::before,
+  &__art2::before,
+  &__art3::before,
+  &__art4::before {
     content: "";
     display: block;
     width: 270px;
@@ -49,15 +49,15 @@
     background-size: 70px 70px;
   }
 
-  &-art1::before {
+  &__art1::before {
     background-image: url("../images/antenna.svg");
   }
 
-  &-art2::before {
+  &__art2::before {
     background-image: url("../images/clock.svg");
   }
 
-  &-art3::before {
+  &__art3::before {
     background-image: url("../images/diagram.svg");
   }
 

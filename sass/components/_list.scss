@@ -3,11 +3,11 @@
   padding-bottom: 94px;
   background: var(--bg-color3);
 
-  &-box {
+  &__box {
     padding: 0 24px 20px 24px;
   }
 
-  &-photo {
+  &__photo {
     flex-basis: 370px;
     height: 294px;
     flex-shrink: 0;
@@ -15,12 +15,12 @@
     margin-bottom: 20px;
   }
 
-  &-title,
-  &-subtitle {
+  &__title,
+  &__subtitle {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &-title {
+  &__title {
     color: var(--text-color);
     font-family: Roboto;
     font-size: 18px;
@@ -32,7 +32,7 @@
     padding-bottom: 4px;
   }
 
-  &-subtitle {
+  &__subtitle {
     color: var(--subtext-color);
     font-family: Roboto;
     font-size: 16px;
@@ -43,13 +43,13 @@
     width: 322px;
   }
 
-  &-list {
+  &__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
 
-  &-item {
+  &__item {
     height: 404px;
     flex-shrink: 0;
     flex-basis: calc((100% - (30px * 2)) / 3);
@@ -71,7 +71,7 @@
     }
   }
 
-  &-thumb {
+  &__thumb {
     position: relative;
     overflow: hidden;
     width: 370px;
@@ -96,7 +96,7 @@
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 63px 24px;
 
-  &-text1 {
+  &__text1 {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;

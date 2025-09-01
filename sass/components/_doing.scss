@@ -3,12 +3,12 @@
   padding-bottom: 94px;
   background: var(--bg-color3);
 
-  &-wrapper {
+  &__wrapper {
     position: relative;
     overflow: hidden;
   }
 
-  &-text {
+  &__text {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 14px;
@@ -29,13 +29,13 @@
     z-index: 2;
   }
 
-  &-list {
+  &__list {
     display: flex;
     gap: 30px;
     margin-top: 50px;
   }
 
-  &-title {
+  &__title {
     color: var(--text-color);
     text-align: center;
     font-family: Roboto;
@@ -46,7 +46,7 @@
     letter-spacing: 1.08px;
   }
 
-  &-photo {
+  &__photo {
     width: 370px;
     height: 294px;
     flex-shrink: 0;
