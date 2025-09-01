@@ -21,38 +21,41 @@
 
 <body>
   <header class="header">
-    <div class="container header-container">
-      <h2 class="header-title"><span class="header-span">Web</span>Studio</h2>
-      <ul class="header-list">
-        <li class="header-item">
-          <a class="header-link current" href="./index.html">Cтудія</a>
+  <div class="header__container container">
+    <h2 class="header__logo"><span class="header__logo--accent">Web</span>Studio</h2>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a class="header__nav-link header__nav-link--active" href="./index.html">Студія</a>
         </li>
-        <li class="header-item">
-          <a class="header-link" href="./portfolio.html">Портфоліо</a>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="./portfolio.html">Портфоліо</a>
         </li>
-        <li class="header-item">
-          <a class="header-link" href="">Контакти</a>
-        </li>
-      </ul>
-      <ul class="header-list2">
-        <li class="header-item2">
-          <a class="header-mail header-contact" href="mailto:info@devstudio.com">
-            <svg class="header-mail-icon">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-        </li>
-        <li class="header-item2">
-          <a class="header-tel header-contact" href="tel:+380961111111">
-            <svg class="header-tel-icon">
-              <use href="./images/icons.svg#icon-tel"></use>
-            </svg>
-            +38 096 111 11 11</a>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="">Контакти</a>
         </li>
       </ul>
-    </div>
-  </header>
+    </nav>
+    <ul class="header__contacts-list">
+      <li class="header__contacts-item">
+        <a class="header__contacts-link header__contacts-link--mail" href="mailto:info@devstudio.com">
+          <svg class="header__contacts-icon">
+            <use href="./images/icons.svg#icon-email"></use>
+          </svg>
+          info@devstudio.com
+        </a>
+      </li>
+      <li class="header__contacts-item">
+        <a class="header__contacts-link header__contacts-link--tel" href="tel:+380961111111">
+          <svg class="header__contacts-icon">
+            <use href="./images/icons.svg#icon-tel"></use>
+          </svg>
+          +38 096 111 11 11
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
   <main>
     <!-- Ефективні рішення для вашого бізнесу -->
     <section class="decision">
@@ -67,42 +70,38 @@
   ПУНКТУАЛЬНІСТЬ
   ПЛАНУВАННЯ
   СУЧАСНІ ТЕХНОЛОГІЇ -->
-    <section class="Details">
+    <section class="details">
       <div class="container">
-        <ul class="Details-list">
-          <li class="Details-item">
-            <article class="Details-art1">
-              <h2 class="Details-title">УВАГА ДО ДЕТАЛЕЙ</h2>
-              <p class="Details-text">
-                Ідейні міркування, і навіть початок повсякденної роботи з
-                формування позиції.
+        <ul class="details__list">
+          <li class="details__item">
+            <article class="details__art details__art--1">
+              <h2 class="details__title">УВАГА ДО ДЕТАЛЕЙ</h2>
+              <p class="details__text">
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </article>
           </li>
-          <li class="Details-item">
-            <article class="Details-art2">
-              <h2 class="Details-title">ПУНКТУАЛЬНІСТЬ</h2>
-              <p class="Details-text">
-                Завдання організації, особливо рамки і місце навчання кадрів
-                тягне у себе.
+          <li class="details__item">
+            <article class="details__art details__art--2">
+              <h2 class="details__title">ПУНКТУАЛЬНІСТЬ</h2>
+              <p class="details__text">
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </article>
           </li>
-          <li class="Details-item">
-            <article class="Details-art3">
-              <h2 class="Details-title">ПЛАНУВАННЯ</h2>
-              <p class="Details-text">
-                Так само консультація з широким активом значною мірою
-                зумовлює.
+          <li class="details__item">
+            <article class="details__art details__art--3">
+              <h2 class="details__title">ПЛАНУВАННЯ</h2>
+              <p class="details__text">
+                Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </article>
           </li>
-          <li class="Details-item">
-            <article class="Details-art4">
-              <h2 class="Details-title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
-              <p class="Details-text">
-                Значимість цих проблем настільки очевидна, що реалізація
-                планових завдань.
+          <li class="details__item">
+            <article class="details__art details__art--4">
+              <h2 class="details__title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
+              <p class="details__text">
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </article>
           </li>

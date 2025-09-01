@@ -19,34 +19,37 @@
 
 <body>
   <header class="header">
-    <div class="container header-container">
-      <h2 class="header-title"><span class="header-span">Web</span>Studio</h2>
-      <ul class="header-list">
-        <li class="header-item">
-          <a class="header-link" href="./index.html">Cтудія</a>
-        </li>
-        <li class="header-item">
-          <a class="header-link current" href="./portfolio.html">Портфоліо</a>
-        </li>
-        <li class="header-item">
-          <a class="header-link" href="">Контакти</a>
-        </li>
-      </ul>
-      <ul class="header-list2">
-        <li class="header-item2">
-          <a class="header-mail header-contact" href="mailto:info@devstudio.com">
-            <svg class="header-mail-icon">
+    <div class="header__container container">
+      <h2 class="header__logo"><span class="header__logo--accent">Web</span>Studio</h2>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link header__nav-link--active" href="./index.html">Студія</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header__contacts-list">
+        <li class="header__contacts-item">
+          <a class="header__contacts-link header__contacts-link--mail" href="mailto:info@devstudio.com">
+            <svg class="header__contacts-icon">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
             info@devstudio.com
           </a>
         </li>
-        <li class="header-item2">
-          <a class="header-tel header-contact" href="tel:+380961111111">
-            <svg class="header-tel-icon">
+        <li class="header__contacts-item">
+          <a class="header__contacts-link header__contacts-link--tel" href="tel:+380961111111">
+            <svg class="header__contacts-icon">
               <use href="./images/icons.svg#icon-tel"></use>
             </svg>
-            +38 096 111 11 11</a>
+            +38 096 111 11 11
+          </a>
         </li>
       </ul>
     </div>
