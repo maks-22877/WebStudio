@@ -15,47 +15,47 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/resest.css" />
   <!-- <link rel="stylesheet" href="./css/style.css" /> -->
-   <link rel="stylesheet" href="./css/style.min.css" />
+  <link rel="stylesheet" href="./css/style.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
-  <div class="header__container container">
-    <h2 class="header__logo"><span class="header__logo--accent">Web</span>Studio</h2>
-    <nav class="header__nav">
-      <ul class="header__nav-list">
-        <li class="header__nav-item">
-          <a class="header__nav-link header__nav-link--active" href="./index.html">Студія</a>
+    <div class="header__container container">
+      <h2 class="header__logo"><span class="header__logo--accent">Web</span>Studio</h2>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link header__nav-link--active" href="./index.html">Студія</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header__contacts-list">
+        <li class="header__contacts-item">
+          <a class="header__contacts-link header__contacts-link--mail" href="mailto:info@devstudio.com">
+            <svg class="header__contacts-icon">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+            info@devstudio.com
+          </a>
         </li>
-        <li class="header__nav-item">
-          <a class="header__nav-link" href="./portfolio.html">Портфоліо</a>
-        </li>
-        <li class="header__nav-item">
-          <a class="header__nav-link" href="">Контакти</a>
+        <li class="header__contacts-item">
+          <a class="header__contacts-link header__contacts-link--tel" href="tel:+380961111111">
+            <svg class="header__contacts-icon">
+              <use href="./images/icons.svg#icon-tel"></use>
+            </svg>
+            +38 096 111 11 11
+          </a>
         </li>
       </ul>
-    </nav>
-    <ul class="header__contacts-list">
-      <li class="header__contacts-item">
-        <a class="header__contacts-link header__contacts-link--mail" href="mailto:info@devstudio.com">
-          <svg class="header__contacts-icon">
-            <use href="./images/icons.svg#icon-email"></use>
-          </svg>
-          info@devstudio.com
-        </a>
-      </li>
-      <li class="header__contacts-item">
-        <a class="header__contacts-link header__contacts-link--tel" href="tel:+380961111111">
-          <svg class="header__contacts-icon">
-            <use href="./images/icons.svg#icon-tel"></use>
-          </svg>
-          +38 096 111 11 11
-        </a>
-      </li>
-    </ul>
-  </div>
-</header>
+    </div>
+  </header>
   <main>
     <!-- Ефективні рішення для вашого бізнесу -->
     <section class="decision">
@@ -348,44 +348,44 @@
           </ul>
         </li>
         <li class="footer__items">
-          <ul class="footer__list2">
-            <li class="footer__item2">
-              <h2 class="footer__text">приєднуйтесь</h2>
-              <ul class="footer__list3">
-                <li class="footer__item3">
-                  <svg class="footer__icon">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </li>
-                <li class="footer__item3">
-                  <svg class="footer__icon">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </li>
-                <li class="footer__item3">
-                  <svg class="footer__icon">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </li>
-                <li class="footer__item3">
-                  <svg class="footer__icon">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </li>
-              </ul>
+
+
+          <h2 class="footer__text">приєднуйтесь</h2>
+          <ul class="footer__list3">
+            <li class="footer__item3">
+              <svg class="footer__icon">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </li>
+            <li class="footer__item3">
+              <svg class="footer__icon">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </li>
+            <li class="footer__item3">
+              <svg class="footer__icon">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </li>
+            <li class="footer__item3">
+              <svg class="footer__icon">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
             </li>
           </ul>
+
+
         </li>
 
-        <div class="mailing">
-          <p class="mailing-text">Підпишіться на розсилку</p>
-          <form class="mailing-form">
-            <label class="mailing-label">
-              <input type="email" class="mailing-input" placeholder="E-mail" required />
+        <div class="footer__mailing">
+          <p class="mailing__text">Підпишіться на розсилку</p>
+          <form class="mailing__form">
+            <label class="mailing__label">
+              <input type="email" class="mailing__input" placeholder="E-mail" required />
             </label>
-            <button class="mailing-button" type="submit">
+            <button class="mailing__button" type="submit">
               <span>Підписатися</span>
-              <svg class="button-svg">
+              <svg class="button__svg">
                 <use href="./images/icons.svg#icon-telegram"></use>
               </svg>
             </button>
