@@ -1,7 +1,7 @@
 @import "./base/reset";
+@import "./base/common";
 @import "./utils/variables";
 @import "./utils/keyframes";
-@import "./base/common";
 @import "./components/modal";
 @import "./components/header";
 @import "./components/decision";
@@ -10,5 +10,4 @@
 @import "./components/team";
 @import "./components/client";
 @import "./components/footer";
-@import "./components/button";
-@import "./components/list";
+

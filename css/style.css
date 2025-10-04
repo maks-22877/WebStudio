@@ -1,4 +1,3 @@
-@charset "UTF-8";
 ul {
   list-style: none;
   margin: 0;
@@ -306,13 +305,13 @@ button {
 .decision {
   padding-top: 200px;
   padding-bottom: 200px;
-  background: var(--bg-color);
+  background: #2f303a;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/decision.webp");
   background-size: 1600px 600px;
   background-repeat: no-repeat;
 }
 .decision__title {
-  color: var(--title-color);
+  color: #fff;
   text-align: center;
   font-family: Roboto;
   font-size: 44px;
@@ -327,7 +326,7 @@ button {
   margin: 0 auto;
 }
 .decision__button {
-  color: var(--title-color);
+  color: #fff;
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
@@ -336,7 +335,7 @@ button {
   line-height: 30px; /* 187.5% */
   letter-spacing: 0.96px;
   border-radius: 4px;
-  background: var(--subtitle-color);
+  background: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   display: flex;
   margin: 0 auto;
@@ -349,14 +348,14 @@ button {
 
 .details {
   padding-top: 94px;
-  background: var(--bg-color3);
+  background: #fff;
 }
 .details__list {
   display: flex;
   gap: 30px;
 }
 .details__title {
-  color: var(--text-color);
+  color: #212121;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -368,7 +367,7 @@ button {
   margin: 30px auto 10px;
 }
 .details__text {
-  color: var(--subtext-color);
+  color: #757575;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -392,16 +391,16 @@ button {
   background-size: 70px 70px;
 }
 .details__art1::before {
-  background-image: url("../images/antenna.svg");
+  background-image: url("../../images/antenna.svg");
 }
 .details__art2::before {
-  background-image: url("../images/clock.svg");
+  background-image: url("../../images/clock.svg");
 }
 .details__art3::before {
-  background-image: url("../images/diagram.svg");
+  background-image: url("../../images/diagram.svg");
 }
-.details-art4::before {
-  background-image: url("../images/astronaut.svg");
+.details__art4::before {
+  background-image: url("../../images/astronaut.svg");
 }
 
 .doing {
@@ -459,7 +458,7 @@ button {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: var(--bg-color2);
+  background-color: #f5f4fa;
 }
 .team__list {
   display: flex;
@@ -468,10 +467,10 @@ button {
 }
 .team__item {
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-  background: var(--bg-color3);
+  background: #fff;
 }
 .team__title {
-  color: var(--text-color);
+  color: #212121;
   text-align: center;
   font-family: Roboto;
   font-size: 36px;
@@ -488,7 +487,7 @@ button {
   margin-bottom: 30px;
 }
 .team__subtitle {
-  color: var(--text-color);
+  color: #212121;
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
@@ -499,7 +498,7 @@ button {
   margin-bottom: 10px;
 }
 .team__text {
-  color: var(--subtext-color);
+  color: #757575;
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
@@ -526,14 +525,12 @@ button {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #fff;
   margin-bottom: 30px;
   fill: #afb1b8;
 }
 .team__link2:hover, .team__link2:focus {
   background-color: #2196f3;
-}
-.team__link2:hover .team-icon, .team__link2:focus .team-icon {
   fill: #ffffff;
 }
 
@@ -600,7 +597,7 @@ button {
 }
 
 .footer__title {
-  color: var(--title-color);
+  color: #fff;
   font-family: Raleway;
   font-size: 26px;
   font-style: normal;
@@ -611,7 +608,7 @@ button {
 }
 
 .footer__span {
-  color: var(--subtitle-color);
+  color: #2196f3;
   font-family: Raleway;
   font-size: 26px;
   font-style: normal;
@@ -621,7 +618,7 @@ button {
 }
 
 .foooter__address {
-  color: var(--title-color);
+  color: #fff;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -686,7 +683,7 @@ button {
 .footer__icon {
   width: 20px;
   height: 20px;
-  fill: var(--title-color);
+  fill: #fff;
 }
 
 .footer__list3 {
@@ -740,7 +737,7 @@ button {
 }
 
 .mailing__button {
-  background-color: #2196F3;
+  background-color: #2196f3;
   width: 200px;
   height: 50px;
   display: flex;
@@ -749,14 +746,14 @@ button {
   gap: 10px;
 }
 
-span {
+.footer__button-text {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 187%;
   letter-spacing: 0.06em;
   text-align: center;
-  color: #2196f3;
+  color: #fff;
 }
 
 .button__svg {
@@ -791,176 +788,4 @@ span {
   padding-bottom: 16px;
   padding-right: 32px;
   padding-top: 16px;
-}
-
-.button {
-  padding-top: 94px;
-  background: var(--bg-color3);
-}
-.button__list {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  align-content: center;
-}
-.button__list:nth-child(1) {
-  flex-basis: 73px;
-  height: 38px;
-  flex-shrink: 0;
-}
-.button__list:nth-child(2) {
-  flex-basis: 125px;
-  height: 38px;
-  flex-shrink: 0;
-}
-.button__list:nth-child(3) {
-  flex-basis: 112px;
-  height: 38px;
-  flex-shrink: 0;
-}
-.button__list:nth-child(4) {
-  flex-basis: 103px;
-  height: 38px;
-  flex-shrink: 0;
-}
-.button__list:nth-child(5) {
-  flex-basis: 130px;
-  height: 38px;
-  flex-shrink: 0;
-}
-.button__buttton {
-  color: var(--text-color);
-  text-align: center;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 26px; /* 162.5% */
-  letter-spacing: 0.48px;
-  padding: 6px 22px;
-  border-radius: 4px;
-}
-.button__buttton:hover {
-  color: var(--title-color);
-  background-color: var(--subtitle-color);
-  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-  text-align: center;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 26px; /* 162.5% */
-  letter-spacing: 0.48px;
-}
-
-.list {
-  padding-top: 50px;
-  padding-bottom: 94px;
-  background: var(--bg-color3);
-}
-.list__box {
-  padding: 0 24px 20px 24px;
-}
-.list__photo {
-  flex-basis: 370px;
-  height: 294px;
-  flex-shrink: 0;
-  background: url(<path-to-image>) lightgray 50%/cover no-repeat;
-  margin-bottom: 20px;
-}
-.list__title, .list__subtitle {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.list__title {
-  color: var(--text-color);
-  font-family: Roboto;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 36px;
-  letter-spacing: 1.08px;
-  width: 322px;
-  padding-bottom: 4px;
-}
-.list__subtitle {
-  color: var(--subtext-color);
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.48px;
-  width: 322px;
-}
-.list__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-.list__item {
-  height: 404px;
-  flex-shrink: 0;
-  flex-basis: calc((100% - 60px) / 3);
-  outline: 1px solid #eee;
-  position: relative;
-  overflow: hidden;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.list__item:hover {
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-}
-.list__item:hover .overlay {
-  opacity: 1;
-  transform: translateY(0);
-}
-.list__thumb {
-  position: relative;
-  overflow: hidden;
-  width: 370px;
-  height: 294px;
-}
-
-.overlay {
-  width: 370px;
-  height: 294px;
-  background: rgba(33, 150, 243, 0.9);
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transform: translateY(100%);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 63px 24px;
-}
-.overlay__text1 {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 156%;
-  letter-spacing: 0.03em;
-  color: #fff;
-}
-
-/* Кнопки */
-.decision-button,
-.mailing-button,
-.modal-button {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.decision-button:hover, .decision-button:focus,
-.mailing-button:hover,
-.mailing-button:focus,
-.modal-button:hover,
-.modal-button:focus {
-  background-color: #2196f3;
-  color: #fff;
-  box-shadow: 0 4px 20px rgba(33, 150, 243, 0.3);
-}
-
-/* Кнопки фільтрів */
-.button-buttton {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }/*# sourceMappingURL=style.css.map */

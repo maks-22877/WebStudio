@@ -1,6 +1,7 @@
 .details {
   padding-top: 94px;
-  background: var(--bg-color3);
+  background: $color-bg3;
+;
 
   &__list {
     display: flex;
@@ -8,7 +9,7 @@
   }
 
   &__title {
-    color: var(--text-color);
+    color: $color-title;
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -21,7 +22,7 @@
   }
 
   &__text {
-    color: var(--subtext-color);
+    color: $color-subtext;
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -50,18 +51,18 @@
   }
 
   &__art1::before {
-    background-image: url("../images/antenna.svg");
+    background-image: url("../../images/antenna.svg");
   }
 
   &__art2::before {
-    background-image: url("../images/clock.svg");
+    background-image: url("../../images/clock.svg");
   }
 
   &__art3::before {
-    background-image: url("../images/diagram.svg");
+    background-image: url("../../images/diagram.svg");
   }
 
-  &-art4::before {
-    background-image: url("../images/astronaut.svg");
+  &__art4::before {
+    background-image: url("../../images/astronaut.svg");
   }
 }

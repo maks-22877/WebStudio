@@ -9,7 +9,7 @@
 }
 
 .footer__title {
-  color: var(--title-color);
+  color: $color-bg3;
   font-family: Raleway;
   font-size: 26px;
   font-style: normal;
@@ -20,7 +20,7 @@
 }
 
 .footer__span {
-  color: var(--subtitle-color);
+  color: $color-accent;
   font-family: Raleway;
   font-size: 26px;
   font-style: normal;
@@ -30,7 +30,7 @@
 }
 
 .foooter__address {
-  color: var(--title-color);
+  color: $color-bg3;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -75,7 +75,7 @@
 }
 
 .footer__text {
-  color: #fff;
+  color: $color-bg3;
 
   font-family: Roboto;
   font-size: 14px;
@@ -96,7 +96,7 @@
 .footer__icon {
   width: 20px;
   height: 20px;
-  fill: var(--title-color);
+  fill: $color-bg3;
 }
 
 .footer__list3 {
@@ -117,7 +117,7 @@
 .footer__item3:hover {
   width: 44px;
   height: 44px;
-  background-color: #2196f3;
+  background-color: $color-accent;
   border-radius: 100%;
   display: flex;
   align-items: center;
@@ -145,11 +145,11 @@
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
-  color: #fff;
+  color: $color-bg3;
 }
 
 .mailing__button {
-  background-color: #2196F3;
+  background-color: $color-accent;
   width: 200px;
   height: 50px;
   display: flex;
@@ -159,14 +159,14 @@
 
 }
 
-span {
+.footer__button-text {
   font-family: $font-main;
   font-weight: 700;
   font-size: 16px;
   line-height: 187%;
   letter-spacing: 0.06em;
   text-align: center;
-  color: $color-accent;
+  color: $color-bg3;
 }
 
 .button__svg {
