@@ -18,11 +18,26 @@ button {
 }
 
 .container {
-  width: 1200px;
-  /* outline: solid red; */
-  margin: 0 auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .backdrop {
@@ -301,7 +316,14 @@ button {
 .header__contacts-link:hover .header__contacts-icon, .header__contacts-link:focus .header__contacts-icon {
   fill: #2196f3;
 }
-
+.header__burger {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .header__burger {
+    display: none;
+  }
+}
 .decision {
   padding-top: 200px;
   padding-bottom: 200px;

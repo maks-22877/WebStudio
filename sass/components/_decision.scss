@@ -1,15 +1,19 @@
 .decision {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background: $bg-color;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/decision.webp");
-  background-size: 1600px 600px;
+  background-color: $background-color;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40) 10%), url("../../images/decision.webp");
   background-repeat: no-repeat;
+
+
+  @media screen and (min-width: 480px) {}
+
+  @media screen and (min-width: 768px) {}
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 
   &__title {
     color: $color-bg3;
@@ -18,7 +22,8 @@
     font-size: 44px;
     font-style: normal;
     font-weight: 900;
-    line-height: 60px; /* 136.364% */
+    line-height: 60px;
+    /* 136.364% */
     letter-spacing: 2.64px;
     text-transform: uppercase;
     max-width: 696px;
@@ -34,7 +39,8 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 30px; /* 187.5% */
+    line-height: 30px;
+    /* 187.5% */
     letter-spacing: 0.96px;
     border-radius: 4px;
     background: $color-accent;
