@@ -1,8 +1,11 @@
 @import "./base/reset";
 @import "./base/common";
-@import "./utils/variables";
-@import "./utils/keyframes";
-@import "./components/header";
-@import "./components/button";
-@import "./components/list";
+@import "./utills/keyframes";
+@import "./utills/vars";
+@import "./utills/placeholders";
+@import "./utills/mixins";
+@import "./components/portfolio-header";
+@import "./components/portfolio-hero";
 @import "./components/footer";
+@import "./components/menu";
+@import "./components/top";

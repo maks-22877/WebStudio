@@ -1,0 +1,84 @@
+.regular {
+    padding: 60px 0;
+
+    @media screen and (min-width: 480px) {}
+
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1280px) {
+        padding: 94px 0;
+    }
+
+    &__title {
+        @extend %title-sections;
+    }
+
+
+
+    &__list {
+        @include flex-position($space: 30px, $wrap: wrap);
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            @include flex-position($space: 30px, $wrap: wrap);
+        }
+
+        @media screen and (min-width: 1280px) {}
+    }
+
+    &__item {
+        width: calc((100% - 30px) / 2);
+        border-radius: 4px;
+        border: 1px solid #AFB1B8;
+        @extend %transition;
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 30px) / 3);
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: calc((100% - 30px) / 7);
+        }
+
+        &:hover {
+            border: 1px solid $link-color;
+        }
+    }
+
+    &__image {
+        fill: #AFB1B8;
+
+        padding: 16px 32px;
+        width: 100%;
+        max-width: 226px;
+        height: 92px;
+        @extend %transition;
+        display: flex;
+        justify-content: center;
+
+
+        @media screen and (min-width: 480px) {
+            width: 226px;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 210px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            padding: 16px 32px;
+            width: 170px;
+        }
+
+        &:hover {
+
+            fill: $link-color;
+            cursor: pointer;
+
+        }
+    }
+
+}

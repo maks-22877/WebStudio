@@ -1,13 +1,16 @@
 @import "./base/reset";
 @import "./base/common";
-@import "./utils/variables";
-@import "./utils/keyframes";
-@import "./components/modal";
+@import "./utills/vars";
+@import "./utills/placeholders";
+@import "./utills/mixins";
+@import "./utills/keyframes";
 @import "./components/header";
-@import "./components/decision";
-@import "./components/details";
+@import "./components/hero";
+@import "./components/about";
 @import "./components/doing";
 @import "./components/team";
-@import "./components/client";
+@import "./components/regular";
 @import "./components/footer";
-
+@import "./components/modal";
+@import "./components/menu";
+@import "./components/top";

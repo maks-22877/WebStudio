@@ -1,0 +1,41 @@
+.top {
+
+    @extend %transition;
+    display: none;
+
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1280px) {
+        position: fixed;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #F5F4FA;
+        bottom: 15px;
+        right: 15px;
+        @include flex-position();
+        animation-name: move_top;
+        animation-duration: 2s;
+        animation-direction: inherit;
+        animation-iteration-count: infinite;
+
+    }
+
+    &__svg {
+        width: 45px;
+        height: 44px;
+        @extend %transition;
+
+        &:hover {
+            fill: #F5F4FA;
+        }
+    }
+
+    &:hover {
+        background-color: rgb(0, 140, 255);
+    }
+}
+
+.top:hover>.top__svg {
+    fill: #F5F4FA;
+}

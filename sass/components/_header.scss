@@ -1,265 +1,371 @@
 .header {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #ECECEC;
-
-  @media screen and (min-width: 480px) {}
-
-  @media screen and (min-width: 768px) {
-    padding-top: 26px;
-    padding-bottom: 26px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    padding-top: 24px;
-    padding-bottom: 25px;
-  }
-
-
-  &__nav {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ECECEC;
 
     @media screen and (min-width: 480px) {}
 
     @media screen and (min-width: 768px) {
-      @include flex-position();
+        padding-top: 26px;
+        padding-bottom: 26px;
     }
 
     @media screen and (min-width: 1280px) {
-      font-size: 26px;
-      letter-spacing: 0.78px;
-    }
-  }
-
-  &__logo {
-    color: $link-color;
-    font-family: Raleway;
-    font-size: 24px;
-    letter-spacing: 0.03em;
-    font-weight: 700;
-    line-height: normal;
-
-    @media screen and (min-width: 480px) {}
-
-    @media screen and (min-width: 768px) {}
-
-    @media screen and (min-width: 1280px) {
-      font-size: 26px;
-      letter-spacing: 0.78px;
-    }
-  }
-
-
-  &--accent {
-    color: #000;
-    font-family: Raleway;
-    font-size: 24px;
-    letter-spacing: 0.03em;
-    font-weight: 700;
-    line-height: normal;
-
-    @media screen and (min-width: 480px) {}
-
-    @media screen and (min-width: 768px) {
-      margin-right: 87px;
+        padding-top: 24px;
+        padding-bottom: 25px;
     }
 
-    @media screen and (min-width: 1280px) {
-      margin-right: 91px;
-    }
-  }
 
-  &__nav {
-    margin-left: 93px;
-  }
-
-  &__nav-list {
-    display: none;
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
 
 
-    @media screen and (min-width: 480px) {}
+        @media screen and (min-width: 480px) {}
 
-    @media screen and (min-width: 768px) {
-      @include flex-position($space: 50px);
-    }
+        @media screen and (min-width: 768px) {
+            @include flex-position();
+        }
 
-    @media screen and (min-width: 1280px) {
-      @include flex-position($space: 50px);
-    }
-  }
-
-
-
-  &__nav-link {
-    position: relative;
-    color: $color-title;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -28px;
-      width: 100%;
-      height: 4px;
-      background-color: $color-accent;
-      border-radius: 2px;
-      transform: scaleX(0);
-      transform-origin: left center;
-      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        @media screen and (min-width: 1280px) {
+            font-size: 26px;
+            letter-spacing: 0.78px;
+        }
     }
 
-    &:hover,
-    &:focus {
-      color: $color-accent;
-
-      &::after {
-        transform: scaleX(1);
-      }
-    }
-
-    &--active::after {
-      transform: scaleX(1);
-    }
-  }
-
-  &__contacts-list {
-    display: none;
-
-
-
-    @media screen and (min-width: 480px) {}
-
-    @media screen and (min-width: 768px) {
-      @include flex-position($space: 10px, $direction: column);
-      margin-left: 96px;
-    }
-
-    @media screen and (min-width: 1280px) {
-      margin-left: 315px;
-      @include flex-position($space: 30px, $direction: row);
-    }
-  }
-
-  &__contacts-item {
-    display: none;
-    @extend %transition;
-
-
-    @media screen and (min-width: 480px) {}
-
-    @media screen and (min-width: 768px) {
-      @include flex-position($space: 8px);
-    }
-
-    @media screen and (min-width: 1280px) {
-      @include flex-position($space: 10px);
-    }
-
-    &:hover {
-      color: $link-color;
-
-    }
-  }
-
-  &__contacts-link {
-    color: $color-subtext;
-    font-family: $font-main;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.28px;
-    display: flex;
-    align-items: center;
-    margin-right: 50px;
-    transition:
-      color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &--mail {
-      @extend %transition;
-      display: none;
-
-
-      @media screen and (min-width: 480px) {}
-
-      @media screen and (min-width: 768px) {
-        width: 10px;
-        height: 14px;
-        display: block;
-      }
-
-      @media screen and (min-width: 1280px) {
-        width: 16px;
-        height: 12px;
-      }
-
-      &:hover {
-        fill: $svg-hover-fill
-      }
-    }
-
-    &--tel {
-      display: none;
-      @extend %transition;
-
-
-      @media screen and (min-width: 480px) {}
-
-      @media screen and (min-width: 768px) {
-        font-weight: 500;
-        font-size: 12px;
-        letter-spacing: 0.02em;
-        color: #757575;
-        font-family: Roboto;
-        display: block;
-      }
-
-      @media screen and (min-width: 1280px) {
-        letter-spacing: 0.28px;
-        font-size: 14px;
-      }
-
-      &:hover {
+    &__logo {
         color: $link-color;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
+        font-family: Raleway;
+        font-size: 24px;
+        letter-spacing: 0.03em;
+        font-weight: 700;
         line-height: normal;
-        letter-spacing: 0.28px;
-      }
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {}
+
+        @media screen and (min-width: 1280px) {
+            font-size: 26px;
+            letter-spacing: 0.78px;
+        }
     }
 
-    &__contacts-icon {
-      margin-right: 10px;
-      fill: currentColor;
-      width: 16px;
-      height: 16px;
-      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &__span {
+        color: #000;
+        font-family: Raleway;
+        font-size: 24px;
+        letter-spacing: 0.03em;
+        font-weight: 700;
+        line-height: normal;
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            margin-right: 87px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin-right: 91px;
+        }
+
     }
 
-    &__contacts-link:hover &__contacts-icon,
-    &__contacts-link:focus &__contacts-icon {
-      fill: $color-accent;
+
+
+    &__list {
+        display: none;
+
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            @include flex-position($space: 50px);
+        }
+
+        @media screen and (min-width: 1280px) {
+            @include flex-position($space: 50px);
+        }
+
     }
+
+    &__portfolio,
+    &__contacts {
+
+        display: none;
+        @extend %transition;
+
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.02em;
+            color: $title-color;
+            position: relative;
+            display: block;
+        }
+
+        @media screen and (min-width: 1280px) {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.28px;
+        }
+
+        &:hover,
+        &:hover {
+            color: $link-color;
+        }
+
+        &::after,
+        &::after {
+            content: "";
+            height: 4px;
+            border-radius: 2px;
+            background: $link-color;
+            display: none;
+            position: absolute;
+            top: 45px;
+            left: 0;
+            width: 100%;
+            transform: scale(100%, 100%);
+
+        }
+
+        &:hover::after,
+        &:hover::after {
+            display: block;
+        }
+    }
+
+    &__studio {
+        color: $link-color;
+        font-family: Roboto;
+        position: relative;
+
+
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.02em;
+            color: $title-color;
+            position: relative;
+            display: block;
+            color: $link-color;
+        }
+
+        @media screen and (min-width: 1280px) {
+            letter-spacing: 0.28px;
+            color: $link-color;
+        }
+
+        &::after {
+            content: "";
+            height: 4px;
+            border-radius: 2px;
+            background: $link-color;
+            position: absolute;
+            top: 45px;
+            left: 0;
+            width: 72px;
+            display: block;
+            width: 100%;
+
+
+        }
+    }
+
+    &__connection {
+        display: none;
+
+
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            @include flex-position($space: 10px, $direction: column);
+            margin-left: 96px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin-left: 315px;
+            @include flex-position($space: 30px, $direction: row);
+        }
+
+    }
+
+    &__think {
+        display: none;
+        @extend %transition;
+
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            @include flex-position($space: 8px);
+        }
+
+        @media screen and (min-width: 1280px) {
+            @include flex-position($space: 10px);
+        }
+
+        &:hover {
+            color: $link-color;
+
+        }
+    }
+
+    &__svg {
+        fill: #757575;
+    }
+
+    &__svg-envelope {
+
+        @extend %transition;
+        display: none;
+
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            width: 10px;
+            height: 14px;
+            display: block;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 16px;
+            height: 12px;
+        }
+
+
+        &:hover {
+            fill: $svg-hover-fill
+        }
+
+
+    }
+
+
+
+
+    &__svg-smartphone {
+        display: none;
+        @extend %transition;
+
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            width: 10px;
+            height: 14px;
+            display: block;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 16px;
+            height: 12px;
+        }
+
+        &:hover {
+            fill: $svg-hover-fill;
+
+        }
+    }
+
+    &__email {
+
+        display: none;
+        @extend %transition;
+
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            font-weight: 500;
+            font-size: 12px;
+            letter-spacing: 0.02em;
+            color: #757575;
+            font-family: Roboto;
+            display: block;
+        }
+
+        @media screen and (min-width: 1280px) {
+            letter-spacing: 0.28px;
+            font-size: 14px;
+        }
+
+        &:hover {
+            color: $link-color;
+        }
+    }
+
+    &__number {
+        display: none;
+        @extend %transition;
+
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            font-weight: 500;
+            font-size: 12px;
+            letter-spacing: 0.02em;
+            color: #757575;
+            font-family: Roboto;
+            display: block;
+        }
+
+        @media screen and (min-width: 1280px) {
+            letter-spacing: 0.28px;
+            font-size: 14px;
+        }
+
+        &:hover {
+            color: $link-color;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.28px;
+        }
+    }
+
+
 
     &__burger {
-      display: block;
 
-      @media screen and (min-width: 480px) {}
 
-      @media screen and (min-width: 768px) {
-        display: none;
-      }
 
-      @media screen and (min-width: 1280px) {}
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+
+        @media screen and (min-width: 1280px) {}
+
     }
-  }
+
+    &__burger-svg {
+        width: 24px;
+        height: 16px;
+        background-color: transparent;
+
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+
+        @media screen and (min-width: 1280px) {}
+    }
+
 }

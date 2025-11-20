@@ -1,0 +1,102 @@
+.menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    flex-shrink: 0;
+    background-color: white;
+    z-index: 30;
+
+    @media screen and (min-width: 480px) {}
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1280px) {}
+
+    &__container {
+        padding: 48px 40px;
+
+        width: 450px;
+        position: relative;
+    }
+
+    &__button {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
+
+    &__close {
+        width: 18px;
+        height: 18px;
+        fill: #212121;
+        flex-shrink: 0;
+        @extend %transition;
+
+        &:hover {
+            fill: #2196f3;
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 35px;
+        flex-direction: column;
+        margin-bottom: 302px;
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 40px;
+        letter-spacing: 0.02em;
+        color: #212121;
+        @extend %transition;
+
+        &:hover {
+            color: #2196f3;
+        }
+    }
+
+    &__connection {
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+        margin-bottom: 62px;
+    }
+
+    &__number {
+        font-weight: 500;
+        font-size: 34px;
+        letter-spacing: 0.02em;
+        color: #2196f3;
+    }
+
+    &__email {
+        font-weight: 500;
+        font-size: 24px;
+        letter-spacing: 0.02em;
+        color: #757575;
+    }
+
+    &__socials {
+        display: flex;
+
+    }
+
+    &__add {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 122%;
+        letter-spacing: 0.02em;
+        color: #2196f3;
+        margin-right: 10px;
+    }
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}

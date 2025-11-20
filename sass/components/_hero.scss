@@ -1,0 +1,136 @@
+.hero {
+    background-color: $background-color;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40) 10%), url("../images/mobile/bg@mobile-1x.webp");
+
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40) 10%),url("../images/mobile/bg@mobile-2x.webp");
+    }
+
+
+    @media screen and (min-width: 480px) {}
+
+
+
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40) 10%),url("../images/tablet/bg@tablet-1x.webp");
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40) 10%),url("../images/tablet/bg@tablet-2x.webp");
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40) 10%),url("../images/desktop/bg@desktop-1x.webp");
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40) 10%),url("../images/desktop/bg@desktop-2x.webp");
+        }
+    }
+
+    &__title {
+        color: $accent-color;
+        text-align: center;
+        font-family: Roboto;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 26px;
+        line-height: 162%;
+        letter-spacing: 0.06em;
+        width: 100%;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {}
+
+        @media screen and (min-width: 1280px) {
+            max-width: 696px;
+            font-size: 44px;
+            line-height: 60px;
+            letter-spacing: 2.64px;
+        }
+
+    }
+
+
+
+    &__button {
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        background: $link-color;
+        margin-top: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        max-width: 200px;
+        height: 50px;
+
+        color: $accent-color;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 187%;
+        letter-spacing: 0.96px;
+        @extend %transition;
+
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {}
+
+        @media screen and (min-width: 1280px) {
+            width: 216px;
+            line-height: 30px;
+            letter-spacing: 0.06em;
+        }
+
+
+        &:hover {
+            background: rgb(12, 126, 219);
+
+        }
+
+        &::after {
+            content: "";
+            width: 50px;
+            height: 50px;
+            background: $button-color;
+            border-radius: 50%;
+            top: -20px;
+            left: -20px;
+            position: absolute;
+            animation-name: move_after;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: inherit;
+            z-index: 1;
+        }
+
+        &:hover::after {
+            background-color: $link-color;
+        }
+
+    }
+
+
+}

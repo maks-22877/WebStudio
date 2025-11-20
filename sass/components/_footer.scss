@@ -1,205 +1,367 @@
 .footer {
-  background: $bg-color;
-  padding-bottom: 60px;
-}
+    background: $background-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-.footer__container {
-  display: flex;
-  flex-direction: column;
-}
 
-.footer__title {
-  color: $color-bg3;
-  font-family: Raleway;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.78px;
-  padding-top: 60px;
-}
 
-.footer__span {
-  color: $color-accent;
-  font-family: Raleway;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.78px;
-}
 
-.foooter__address {
-  color: $color-bg3;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  /* 171.429% */
-  letter-spacing: 0.42px;
-  width: 231px;
-  height: 21px;
-  flex-shrink: 0;
-  margin-top: 20px;
-}
+    &__section {
+        @include flex-position($direction: column);
 
-.footer__mail {
-  color: rgba(255, 255, 255, 0.6);
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  /* 171.429% */
-  letter-spacing: 0.42px;
-  width: 136px;
-  height: 21px;
-  flex-shrink: 0;
-  margin-bottom: 9px;
-  margin-top: 9px;
-}
+        @media screen and (min-width: 480px) {}
 
-.footer__tel {
-  color: rgba(255, 255, 255, 0.6);
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  /* 171.429% */
-  letter-spacing: 0.42px;
-  width: 231px;
-  height: 21px;
-  flex-shrink: 0;
-}
+        @media screen and (min-width: 768px) {
+            @include flex-position($direction: row);
+            align-items: start;
+        }
 
-.footer__text {
-  color: $color-bg3;
+        @media screen and (min-width: 1280px) {}
+    }
 
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  padding-top: 72px;
-}
+    &__logo {
+        color: $link-color;
+        font-family: Raleway;
+        font-size: 24px;
+        letter-spacing: 0.03em;
+        font-weight: 700;
+        line-height: normal;
+        // margin-left: auto;
+        // margin-right: auto;
+        display: block;
+        text-align: center;
 
-.footer__lists {
-  display: flex;
-  gap: 70px;
-}
+        @media screen and (min-width: 480px) {}
 
-.footer__icon {
-  width: 20px;
-  height: 20px;
-  fill: $color-bg3;
-}
+        @media screen and (min-width: 768px) {
+            letter-spacing: 0.03em;
 
-.footer__list3 {
-  display: flex;
-  gap: 10px;
-}
 
-.footer__item3 {
-  width: 44px;
-  height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+        }
 
-.footer__item3:hover {
-  width: 44px;
-  height: 44px;
-  background-color: $color-accent;
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.mailing__text {
-  font-family: var(--font-family);
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #fff;
-  margin-bottom: 20px;
-  padding-top: 72px;
-  margin-right: 10px;
-}
+        @media screen and (min-width: 1280px) {
+            font-size: 26px;
+            letter-spacing: 0.78px;
+            text-align: start;
 
-.mailing__input {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  width: 358px;
-  height: 50px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: rgba(33, 150, 243, 0);
-  padding-left: 16px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  color: $color-bg3;
-}
+        }
+    }
 
-.mailing__button {
-  background-color: $color-accent;
-  width: 200px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+    &__span {
+        color: #fff;
+        font-family: Raleway;
+        font-size: 24px;
+        letter-spacing: 0.03em;
+        font-weight: 700;
+        line-height: normal;
 
-}
+        @media screen and (min-width: 480px) {}
 
-.footer__button-text {
-  font-family: $font-main;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 187%;
-  letter-spacing: 0.06em;
-  text-align: center;
-  color: $color-bg3;
-}
+        @media screen and (min-width: 768px) {
+            letter-spacing: 0.03em;
+        }
 
-.button__svg {
-  fill: rgb(255, 255, 255);
-  height: 24px;
-  width: 24px;
-}
+        @media screen and (min-width: 1280px) {
+            font-size: 26px;
+            letter-spacing: 0.78px;
+        }
+    }
 
-.mailing__form {
-  display: flex;
-  gap: 12px;
-}
+    &__text {
+        color: $accent-color;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 171%;
+        letter-spacing: 0.03em;
+        margin-top: 20px;
+        display: block;
+        text-align: center;
 
-.client__title {
-  color: #212121;
 
-  text-align: center;
-  font-family: Roboto;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
-  margin-bottom: 50px;
-}
+        @media screen and (min-width: 480px) {}
 
-.client__item {
-  border-radius: 4px;
-  border: 1px solid #afb1b8;
-  width: 170px;
-  height: 92px;
-  padding-left: 32px;
-  padding-bottom: 16px;
-  padding-right: 32px;
-  padding-top: 16px;
+        @media screen and (min-width: 768px) {}
+
+        @media screen and (min-width: 1280px) {
+            letter-spacing: 0.42px;
+            line-height: 24px;
+            text-align: right;
+        }
+
+
+    }
+
+    &__email {
+        color: $second-text-color;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 171%;
+        letter-spacing: 0.03em;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        display: block;
+        text-align: center;
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {}
+
+        @media screen and (min-width: 1280px) {
+            letter-spacing: 0.42px;
+            line-height: 24px;
+            margin-top: 9px;
+            margin-bottom: 9px;
+            text-align: start;
+        }
+    }
+
+    &__number {
+        color: $second-text-color;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.42px;
+        line-height: 24px;
+        text-align: center;
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {}
+
+        @media screen and (min-width: 1280px) {
+            letter-spacing: 0.42px;
+            line-height: 24px;
+            text-align: left;
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            margin-left: 162px;
+            margin-bottom: 0;
+            margin-top: 0;
+
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin-left: 70px;
+
+        }
+
+    }
+
+    &__join {
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        margin-bottom: 20px;
+        display: block;
+        text-align: center;
+
+        @media screen and (min-width: 480px) {}
+
+
+        @media screen and (min-width: 768px) {}
+
+        @media screen and (min-width: 1280px) {
+            letter-spacing: 0.42px;
+            text-align: left;
+        }
+    }
+
+    &__socials {
+
+        @include flex-position($space: 10px, $wrap: wrap);
+    }
+
+    &__link {
+        color: $accent-color;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        background-color: rgba(255, 255, 255, 0.10);
+        @extend %transition;
+
+        &:hover {
+            background-color: $link-color;
+
+        }
+
+    }
+
+
+    &__svg {
+        @extend %socials-svg;
+        fill: #FFFFFF;
+
+    }
+
+    &__form-box {
+
+
+        @media screen and (min-width: 768px) {
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin-left: 105px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+    }
+
+    &__title {
+        color: $accent-color;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        display: block;
+        text-align: center;
+
+        @media screen and (min-width: 480px) {}
+
+
+        @media screen and (min-width: 768px) {}
+
+        @media screen and (min-width: 1280px) {
+            letter-spacing: 0.42px;
+            text-align: start;
+
+
+        }
+    }
+
+    &__form {
+        margin-top: 20px;
+        @include flex-position($horizontally: center);
+
+    }
+
+    &__input {
+        width: 358px;
+        height: 50px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.30);
+        background: rgba(33, 150, 243, 0.00);
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+        color: #FFF;
+        width: 100%;
+
+        &::placeholder {
+            padding-left: 12px;
+        }
+    }
+
+    &__label {
+        width: 100%;
+        max-width: 450px;
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            width: 450px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 356px;
+        }
+    }
+
+
+
+    &__button {
+        border-radius: 4px;
+        background: $link-color;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+        width: 200px;
+        height: 50px;
+        @include flex-position($horizontally: center);
+        gap: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 28px;
+        padding-right: 28px;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {}
+
+        @media screen and (min-width: 1280px) {
+            margin-top: 0;
+            margin-left: 16px;
+            margin-right: 0;
+        }
+    }
+
+    &__button-text {
+        color: $accent-color;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 187%;
+        letter-spacing: 0.06em;
+
+
+        @media screen and (min-width: 480px) {}
+
+
+
+        @media screen and (min-width: 768px) {}
+
+        @media screen and (min-width: 1280px) {
+            line-height: 30px;
+            letter-spacing: 0.96px;
+        }
+    }
+
+    &__subscribe {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        fill: $svg-fill;
+    }
+
+    &__flex-box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+
+        @media screen and (min-width: 480px) {}
+
+
+        @media screen and (min-width: 768px) {}
+
+        @media screen and (min-width: 1280px) {
+            align-items: end;
+            flex-direction: row;
+            margin-top: 0;
+        }
+    }
 }

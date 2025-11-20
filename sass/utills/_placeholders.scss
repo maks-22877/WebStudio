@@ -1,0 +1,41 @@
+%title-sections {
+    color: $title-color;
+    text-align: center;
+    font-family: Roboto;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 28px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        letter-spacing: 1.08px;
+    }
+
+
+
+
+}
+
+%li-text {
+    color: $text-color;
+    font-style: normal;
+    font-weight: 400;
+}
+
+%transition {
+    transition-duration: 250ms;
+    transition-property: background-color, color, fill, border, transform, opacity;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%socials-svg {
+    width: 44px;
+    height: 44px;
+    padding: 12px 12px;
+}

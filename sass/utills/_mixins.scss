@@ -1,0 +1,8 @@
+@mixin flex-position($space: 0, $vertical: center, $horizontally: center, $direction: row, $wrap: wrap) {
+    display: flex;
+    flex-wrap: $wrap;
+    gap: $space;
+    align-items: $vertical;
+    justify-content: $horizontally;
+    flex-direction: $direction;
+}
